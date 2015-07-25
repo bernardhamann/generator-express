@@ -1,8 +1,5 @@
 # Yebobase Generator
-[![Build Status](https://img.shields.io/travis/petecoop/generator-express.svg)](https://www.npmjs.com/package/generator-yebobase)
 [![NPM Version](https://img.shields.io/badge/version-1.0.1-green.svg)](https://www.npmjs.com/package/generator-yebobase)
-
-
 
 
 A nodejs express generator for Yeoman based on generator-express. This just adds some customisations that I needed, I recommend using the original package"
