@@ -4,7 +4,7 @@
 [![NPM Downloads](https://img.shields.io/npm/dm/generator-express.svg)](https://www.npmjs.org/package/generator-express)
 
 
-An Expressjs generator for Yeoman, based on the express command line tool.
+A nodejs express generator for Yeoman based on generator-express. This just adds some customisations that I needed, I recommend using the original package"
 
 ## Features
 
