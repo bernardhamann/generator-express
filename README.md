@@ -1,7 +1,6 @@
 # Yebobase Generator
 [![Build Status](https://img.shields.io/travis/petecoop/generator-express.svg)](https://www.npmjs.com/package/generator-yebobase)
 [![NPM Version](https://img.shields.io/badge/version-1.0.1-green.svg)](https://www.npmjs.com/package/generator-yebobase)
-[![NPM Downloads](https://img.shields.io/npm/dm/generator-express.svg)](https://www.npmjs.com/package/generator-yebobase)
 
 
 
