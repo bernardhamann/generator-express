@@ -30,11 +30,11 @@
     "request": "~2.55.0",
     "time-grunt": "~1.1.0",
     "load-grunt-tasks": "~3.1.0"<% } %><% if(options.buildTool == 'gulp'){ %>
-    "gulp": "~3.8.10"<% if(options.cssPreprocessor == 'sass'){ %>,
-    "gulp-ruby-sass": "~1.0.1"<% } %><% if(options.cssPreprocessor == 'node-sass'){ %>,
-    "gulp-sass": "~1.3.2"<% } %><% if(options.cssPreprocessor == 'less'){ %>,
-    "gulp-less": "~3.0.1"<% } %><% if(options.cssPreprocessor == 'stylus'){ %>,
-    "gulp-stylus": "~2.0.0"<% } %>,
+    "gulp": "~3.8.10"<% if(options.cssPreprocessor == 'stylus'){ %>,
+    "gulp-stylus": "~2.0.0",
+    "jeet": "~6.1.2",
+    "nib": "~1.1.0",
+    "rupture": "~0.6.1" <% } %>,
     "gulp-nodemon": "~2.0.2",
     "gulp-livereload": "~3.8.0",
     "gulp-plumber": "~1.0.0"<% } %>

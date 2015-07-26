@@ -111,12 +111,9 @@ module.exports = generators.Base.extend({
       var prompt = [{
         type: 'list',
         name: 'cssPreprocessor',
-        message: 'Select a css preprocessor to use (Sass Requires Ruby):' ,
+        message: 'Select a css preprocessor to use:' ,
         choices: [
           'None',
-          'Node-Sass',
-          'Sass',
-          'less',
           'Stylus'
         ],
         store: true
@@ -165,7 +162,7 @@ module.exports = generators.Base.extend({
         name: 'buildTool',
         message: 'Select a build tool to use:',
         choices: [
-          'Grunt',
+          'Grunt (not supported)',
           'Gulp'
         ],
         store: true
