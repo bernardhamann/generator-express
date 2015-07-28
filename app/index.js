@@ -152,24 +152,6 @@ module.exports = generators.Base.extend({
       }.bind(this));
     },
 
-    mongourl: function () {
-
-      if (this.options.database || !this.options.mvc) {
-        return true;
-      }
-      var done = this.async();
-      var prompt = [{
-        type: 'input',
-        name: 'mongourl',
-        message: 'Enter mongourl'
-      }];
-
-      this.prompt(prompt, function (response) {
-        this.options.mongourl = response.mongourl;
-        done();
-      }.bind(this));
-    },
-
     buildTool: function () {
 
       if (this.options.buildTool) {

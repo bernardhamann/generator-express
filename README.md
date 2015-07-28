@@ -1,12 +1,12 @@
 # Yebobase Generator
-[![NPM Version](https://img.shields.io/badge/version-1.0.3-green.svg)](https://www.npmjs.com/package/generator-yebobase)
+[![NPM Version](https://img.shields.io/badge/version-1.0.4-green.svg)](https://www.npmjs.com/package/generator-yebobase)
 
 
 A nodejs express generator for Yeoman based on generator-express. This just adds some customisations that I needed like support for stylus with Jeet, Rupture and Nib. If you dont need these changes I recommend using the original package
 
 ## Instalation
 
-npm i generator-yebobase
+npm install -g generator-yebobase
 
 ## Features
 
@@ -51,10 +51,6 @@ To get going:
 - Run: `gulp` to run the local server - defaults to `localhost:3000` - port can be changed in `config/config.js`. The gulp tasks include live reloading as before.
 
 ## Options
-
-- `--coffee` (not supported)
-
-  Uses CoffeeScript.
 
 - `--skip-install`
 
