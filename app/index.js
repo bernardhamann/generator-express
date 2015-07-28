@@ -11,12 +11,11 @@ module.exports = generators.Base.extend({
     generators.Base.apply(this, arguments);
 
     // add option to skip install
-    this.option('skip-install');
+    this.option('install');
 
     this.slugify = slugify;
   },
   prompting: {
-
     dir: function () {
 
       if (this.options.createDirectory !== undefined) {
@@ -138,11 +137,7 @@ module.exports = generators.Base.extend({
         message: 'Select a database to use:',
         choices: [
           'None',
-          'MongoDB',
-          'MySQL (not supported)',
-          'PostgreSQL (not supported)',
-          'RethinkDB (not supported)',
-          'SQLite (not supported)'
+          'MongoDB'
         ],
         store: true
       }];
@@ -164,8 +159,7 @@ module.exports = generators.Base.extend({
         name: 'buildTool',
         message: 'Select a build tool to use:',
         choices: [
-          'Gulp',
-          'Grunt (not supported)'
+          'Gulp'
         ],
         store: true
       }];
@@ -252,6 +246,6 @@ module.exports = generators.Base.extend({
     }
   },
   install: function () {
-    if(!this.options['skip-install']) this.installDependencies();
+    if(this.options['install']) this.installDependencies();
   }
 });
