@@ -138,10 +138,10 @@ module.exports = generators.Base.extend({
         choices: [
           'None',
           'MongoDB',
-          'MySQL',
-          'PostgreSQL',
-          'RethinkDB',
-          'SQLite'
+          'MySQL (not supported)',
+          'PostgreSQL (not supported)',
+          'RethinkDB (not supported)',
+          'SQLite (not supported)'
         ],
         store: true
       }];
@@ -162,8 +162,8 @@ module.exports = generators.Base.extend({
         name: 'buildTool',
         message: 'Select a build tool to use:',
         choices: [
-          'Grunt (not supported)',
-          'Gulp'
+          'Gulp',
+          'Grunt (not supported)'
         ],
         store: true
       }];

@@ -4,11 +4,15 @@
 
 A nodejs express generator for Yeoman based on generator-express. This just adds some customisations that I needed like support for stylus with Jeet, Rupture and Nib. If you dont need these changes I recommend using the original package
 
+## Instalation
+
+npm i generator-yebobase
+
 ## Features
 
 - Basic or MVC style file structure
-- CoffeeScript Support
-- Gulp or Grunt build tools with file watching and livereload
+- CoffeeScript (not supported)
+- Gulp build tool with file watching and livereload
 - .editorconfig for consistent coding styles within text editors
 - Support View engines:
   - Jade
@@ -20,18 +24,18 @@ A nodejs express generator for Yeoman based on generator-express. This just adds
   - Stylus (with Jeet, Rupture and Nib)
 - Supported Databases (with MVC structure):
  - MongoDB
- - MySQL
- - PostgreSQL
- - RethinkDB
- - SQLite
+ - MySQL (not supported)
+ - PostgreSQL (not supported)
+ - RethinkDB (not supported)
+ - SQLite (not supported)
 
 ## Getting started
 
 - Make sure you have [yo](https://github.com/yeoman/yo) installed:
     `npm install -g yo`
 - Install the generator **globally**: `npm install -g generator-express`
-- Run: `yo express` and select Basic. Add `--coffee` if you require CoffeeScript.
-- Run: `grunt` or `gulp` to run the local server at `localhost:3000`, the grunt/gulp tasks include live reloading for views, css in public/css and restarting the server for changes to app.js or js in routes/
+- Run: `yo express` and select Basic. Add `--coffee` if you require CoffeeScript.(not supported)
+- Run: `gulp` to run the local server at `localhost:3000`, the gulp tasks include live reloading for views, css in public/css and restarting the server for changes to app.js or js in routes/
 
 ## MVC apps
 
@@ -42,13 +46,13 @@ To get going:
 - Make sure you have [yo](https://github.com/yeoman/yo) installed:
     `npm install -g yo`
 - Install the generator **locally**: `npm install generator-express`
-- Run: `yo express`, select MVC and select your database of choice. Add `--coffee` if you require CoffeeScript.
+- Run: `yo express`, select MVC and select your database of choice. Add `--coffee` if you require CoffeeScript. (not supported)
 - Ensure that the selected database is running on your machine, if running elsewhere the connection string can be changed in `config/config.js`
-- Run: `grunt` or `gulp` to run the local server - defaults to `localhost:3000` - port can be changed in `config/config.js`. The grunt/gulp tasks include live reloading as before.
+- Run: `gulp` to run the local server - defaults to `localhost:3000` - port can be changed in `config/config.js`. The gulp tasks include live reloading as before.
 
 ## Options
 
-- `--coffee`
+- `--coffee` (not supported)
 
   Uses CoffeeScript.
 
