@@ -1,7 +1,7 @@
 {
   "name": "generator-yebobase",
   "version": "1.0.7",
-  "description": "A nodejs express generator for Yeoman based on generator-express. This just adds some customisations that I needed like support for stylus with Jeet, Rupture and Nib. If you dont need these changes I recommend using the original package",
+  "description": "A nodejs express generator for Yeoman based on generator-express. This just adds some customisations that I needed like support for stylus with Jeet, Rupture and Nib. If you dont need these changes I recommend using the original package. Also this package is not ready to be used yet",
   "keywords": [
     "yeoman-generator",
     "express",

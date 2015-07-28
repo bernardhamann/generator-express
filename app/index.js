@@ -212,26 +212,12 @@ module.exports = generators.Base.extend({
       // css
       var stylesheets = this.options.cssPreprocessor;
       if(stylesheets === 'none') stylesheets = 'css';
-      if(stylesheets === 'node-sass') stylesheets = 'sass';
       this.sourceRoot(path.join(__dirname, 'templates', 'css', stylesheets));
       this.directory('.', 'public/css');
 
       // grunt/gulp
       var buildFile = this.options.buildTool === 'grunt' ? 'Gruntfile.js' : 'gulpfile.js';
       this.copy(path.join(__dirname, 'templates', 'extras', name + '-shared', buildFile), buildFile);
-
-      // sequelize extra stuff
-      if (this.options.database === 'mysql' ||
-          this.options.database === 'postgresql' ||
-          this.options.database === 'sqlite') {
-        this.copy(path.join(__dirname, 'templates', 'extras', name + suffix, 'sequelize-model-index.' + this.filetype), 'app/models/index.' + this.filetype);
-      }
-
-      //thinky extra stuff
-      if (this.options.database === 'rethinkdb') {
-        this.copy(path.join(__dirname, 'templates', 'extras', name + suffix, 'thinky-model-index.' + this.filetype), 'app/models/index.' + this.filetype);
-        this.copy(path.join(__dirname, 'templates', 'extras', name + suffix, 'thinky-config.' + this.filetype), 'config/thinky.' + this.filetype);
-      }
 
     },
     assetsDirs: function () {
@@ -240,9 +226,6 @@ module.exports = generators.Base.extend({
       mkdirp.sync('public/js');
       mkdirp.sync('public/css');
       mkdirp.sync('public/img');
-      if (this.options.database == 'sqlite') {
-        mkdirp.sync('data');
-      }
     }
   },
   install: function () {

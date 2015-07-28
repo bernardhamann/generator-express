@@ -1,10 +1,11 @@
-<% if(options.coffee){ %>require('coffee-script/register');<% } %>
-
 var express = require('express'),
   config = require('./config/config')<% if(options.database == 'none'){ %>;<% } %><% if(options.database == 'mongodb'){ %>,
   glob = require('glob'),
-  mongoose = require('mongoose');<% } %><% if(options.database == 'mysql' || options.database == 'postgresql' || options.database == 'sqlite'){ %>,
+  mongoose = require('mongoose');<% } %>
+
+  <% if(options.database == 'mysql' || options.database == 'postgresql' || options.database == 'sqlite'){ %>,
   db = require('./app/models');<% } %>
+
 <% if(options.database == 'mongodb'){ %>
 mongoose.connect(config.db);
 var db = mongoose.connection;
