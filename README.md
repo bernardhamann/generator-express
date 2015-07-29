@@ -1,5 +1,5 @@
 # Yebobase Generator
-[![NPM Version](https://img.shields.io/badge/version-1.0.7-green.svg)](https://www.npmjs.com/package/generator-yebobase)
+[![NPM Version](https://img.shields.io/badge/version-1.0.8-green.svg)](https://www.npmjs.com/package/generator-yebobase)
 
 
 This is an experiment that did not work out. Please dont use it. If you are looking for a express app generator that uses stylus with Jeet, Rupture and Nib, look at generator-yebo

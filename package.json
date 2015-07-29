@@ -1,6 +1,6 @@
 {
   "name": "generator-yebobase",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "This is an experiment that did not work out. Please dont use it. If you are looking for a express app generator that uses stylus with Jeet, Rupture and Nib, look at generator-yebo",
   "homepage": "https://github.com/bernardhamann/generator-yebobase",
   "bugs": "https://github.com/bernardhamann/generator-yebobase",
