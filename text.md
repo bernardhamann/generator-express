@@ -1,8 +1,9 @@
 # Yebobase Generator
+
 [![NPM Version](https://img.shields.io/badge/version-1.0.8-green.svg)](https://www.npmjs.com/package/generator-yebobase)
 
 
-This is an experiment that did not work out. Please dont use it. If you are looking for a express app generator that uses stylus with Jeet, Rupture and Nib, look at generator-yebo
+This is an experiment. Use at own risk.
 
 ## Features
 
@@ -19,8 +20,6 @@ This is an experiment that did not work out. Please dont use it. If you are look
   - Stylus (with Jeet, Rupture and Nib)
 - Supported Databases (with MVC structure):
   - MongoDB
-
-
 
 ## License
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
